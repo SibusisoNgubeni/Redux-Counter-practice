@@ -75,14 +75,13 @@ console.log('Scenario 1: Initial State =');
 console.log(store.getState()); 
 
 
+
+store.dispatch({ type: ADD });
+store.dispatch({ type: ADD });
 console.log('Scenario 2: Counter incremented');
-store.dispatch({ type: ADD });
-store.dispatch({ type: ADD });
 
-
-console.log('Scenario 3: Counter decremented');
 store.dispatch({ type: SUBTRACT });
-
+console.log('Scenario 3: Counter decremented');
 
 console.log('Scenario 4: Resetting the Counter');
 store.dispatch({ type:RESET});
